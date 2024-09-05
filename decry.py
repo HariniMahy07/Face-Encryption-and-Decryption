@@ -315,10 +315,7 @@ C1_decrypt= inverse_bit_level_confusion(encrypted_final_image, Kh_decrypt , s)
 cv2.imshow('D2', C1_decrypt)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-cv2.imwrite(r'C:\Users\mithu\OneDrive\Desktop\MiniProject\Minii_CODE\09\03\diffusion.jpg', C1_decrypt)
-
-
-#cv2.imwrite(r'C:\Users\mithu\OneDrive\Desktop\MiniProject\Minii_CODE\09\03\diffusion.jpg', C1_decrypt)
+cv2.imwrite(r"C:\Harini\Pictures\diffusion.jpg', C1_decrypt)
 
 C3_decrypt = decrypt_encrypt(merge.diffusion_image, S_bit_decrypt)
 
@@ -326,7 +323,6 @@ C3_decrypt = decrypt_encrypt(merge.diffusion_image, S_bit_decrypt)
 cv2.imshow('D3', C3_decrypt)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-#cv2.imwrite(r'C:\Users\mithu\OneDrive\Desktop\MiniProject\Minii_CODE\09\03\diffusion.jpg', C1_decrypt)
 
 # Resize the image to have square dimensions
 face = C1_decrypt
