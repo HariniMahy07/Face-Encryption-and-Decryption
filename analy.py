@@ -1,4 +1,4 @@
-image = imread("C:\Users\DELCY LARA\Downloads\miniproject\facedet.jpg");
+image = imread("C:\Harini\Pictures\facedet.jpg");
  
 % Separate the RGB channels
 R = double(image(:,:,1));
@@ -35,8 +35,8 @@ ylabel('B Channel');
 zlabel('Frequency');
 title('Histogram of B Channel');
 PSNR ANS SSIM
-image1 = imread("C:\Users\DELCY LARA\Downloads\miniproject\facedet.jpg");
-image2 = imread("C:\Users\DELCY LARA\Downloads\miniproject\encrypt1.jpg");
+image1 = imread("C:\Harini\Pictures\facedet.jpg");
+image2 = imread("C:\Harini\Pictures\encrypt1.jpg");
  
 minHeight = min(size(image1, 1), size(image2, 1));
 minWidth = min(size(image1, 2), size(image2, 2));
