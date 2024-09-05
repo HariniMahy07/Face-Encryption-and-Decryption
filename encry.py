@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import random
 
 # Load the image
-image_path = r'C:\Users\mithu\OneDrive\Desktop\MiniProject\Minii_CODE\09\03\newww\final\har.jpg'
+image_path = r"C:\Harini\Pictures\69.jpg"
 image = cv2.imread(image_path)
 
 # Load the Haar Cascade frontal face detector
@@ -504,7 +504,7 @@ for i, (x, y, w, h) in enumerate(faces):
     face = image[y:y+h, x:x+w]
    
     # Save the extracted face region as a separate image with a unique filename
-    face_path = r'C:\Users\mithu\OneDrive\Desktop\MiniProject\Minii_CODE\09\03\newww\final\har_face_{}.jpg'.format(i)
+    face_path = r"C:\Harini\Pictures\69_{}.jpg".format(i)
     cv2.imwrite(face_path, face)
 
     # Display the detected face
@@ -607,7 +607,7 @@ for i, (x, y, w, h) in enumerate(faces):
     plt.title('Permuted Image')
     plt.show()
 
-    cv2.imwrite(r'C:\Users\mithu\OneDrive\Desktop\MiniProject\Minii_CODE\09\03\rgb_img.jpg', C1)
+    cv2.imwrite(r"C:\Harini\Pictures\rgb_img.jpg", C1)
 
     # Example usage:
     C2 = zigzag_scramble(C1)
@@ -618,7 +618,7 @@ for i, (x, y, w, h) in enumerate(faces):
     plt.title('ZigZag Scrambled Image')
     plt.show()
 
-    cv2.imwrite(r'C:\Users\mithu\OneDrive\Desktop\MiniProject\Minii_CODE\09\03\zigzag_img.jpg', C2)
+    cv2.imwrite(r"C:\Harini\Pictures\zigzag_img.jpg", C2)
 
     # Check if the image was loaded successfully
     if C2 is None:
@@ -803,7 +803,7 @@ for i, (x, y, w, h) in enumerate(faces):
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 
-    cv2.imwrite(r'C:\Users\mithu\OneDrive\Desktop\MiniProject\Minii_CODE\09\03\DNA_img.jpg', C4_prime)
+    cv2.imwrite(r"C:\Harini\Pictures\DNA_img.jpg", C4_prime)
 
     # Encrypt the image using discontinuous diffusion
     diffusion_image = discontinuous_diffusionR(C4_prime) #diffusion
@@ -814,7 +814,7 @@ for i, (x, y, w, h) in enumerate(faces):
     cv2.waitKey(0)
     cv2.destroyAllWindows()
     C4 = imshowImage(diffusion_image)
-    cv2.imwrite(r'C:\Users\mithu\OneDrive\Desktop\MiniProject\Minii_CODE\09\03\neww\final\diffusion.jpg', diffusion_image)
+    cv2.imwrite(r"C:\Harini\Pictures\diffusion.jpg', diffusion_image)
 
     s=300
     # Example usage:
@@ -830,5 +830,5 @@ for i, (x, y, w, h) in enumerate(faces):
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 
-    cv2.imwrite(r'C:\Users\mithu\OneDrive\Desktop\MiniProject\Minii_CODE\09\03\Confusion_final.jpg',C5)
+    cv2.imwrite(r"C:\Harini\Pictures\Confusion_final.jpg",C5)
 
